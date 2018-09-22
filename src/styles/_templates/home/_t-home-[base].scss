@@ -1,0 +1,14 @@
+.t-home {
+  left: 0;
+  top: 0;
+}
+
+.t-home-bear {
+  cursor: pointer;
+
+  display: none;
+
+  &.is-active {
+    display: block;
+  }
+}

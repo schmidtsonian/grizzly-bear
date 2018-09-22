@@ -1,0 +1,25 @@
+// .h-abs-bg, .h-abs-bg__content {
+.h-abs-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: no-repeat scroll center center transparent;
+  background-size: auto 100%;
+  background-size: cover;
+}
+// .h-abs-bg--pattern .h-abs-bg__content {
+//   background-size: auto auto;
+//   background-repeat: repeat;
+// }
+
+
+// OVERRIDES (progressive enhancement)
+// Animations
+// .h-abs-bg__content {
+//   opacity: 0;
+//   transition: opacity 0.45s;
+
+// }
+// .h-abs-bg.is-loaded .h-abs-bg__content{
+//   opacity: 1;
+// }

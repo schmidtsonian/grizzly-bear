@@ -1,0 +1,12 @@
+
+.l-container {
+  position: relative;
+  min-height: calc(480px + 15rem);
+  height: calc(100vh - 2rem);
+  margin: 1rem;
+  background-color: $COLOR_WHITE;
+  box-shadow: 1.4rem 1.4rem 3.0rem 0.6rem rgba($COLOR_BLACK, 0.25);
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transform-origin: right;
+}

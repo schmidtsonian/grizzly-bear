@@ -1,0 +1,22 @@
+
+@mixin document-isloaded {
+
+  body.is-loaded {
+    @content;
+  }
+}
+
+@mixin is-menuopen {
+
+  .l-main.is-menuopen {
+    @content;
+  }
+}
+
+
+@mixin is-desktop {
+
+  body:not(.is-mobile) {
+    @content;
+  }
+}

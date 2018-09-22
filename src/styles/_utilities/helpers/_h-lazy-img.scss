@@ -1,0 +1,8 @@
+.h-lazy-img {
+  opacity: 0;
+}
+
+.h-lazy-img.is-loaded {
+  transition: opacity 0.55s;
+  opacity: 1;
+}
