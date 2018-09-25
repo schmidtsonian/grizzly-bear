@@ -27,13 +27,8 @@ class IndexPage extends Component {
       .then((api) =>
         api.query(Prismic.Predicates.any('document.type', ['bears'])))
       .then(
-        (response) => {
-          this._normalizeData(response)
-          // console.log(response);
-        },
-        (err) => {
-          console.log('Something went wrong: ', err);
-        }
+        (data) => this._normalizeData(data),
+        (err) => console.log('Something went wrong: ', err)
       );
   }
 
@@ -68,13 +63,12 @@ class IndexPage extends Component {
     return array;
   }
 
-  _normalizeData(results) {
+  _normalizeData(data) {
 
-    console.log(results.results[0].data.items);
-    console.log(results.results[0].data.items.length);
+    console.log(data.results);
     this.setState({
-      bears: this._shuffle(results.results[0].data.items),
-      total: results.results[0].data.items.length,
+      bears: this._shuffle(data.results),
+      total: data.results.length,
     });
   }
 }
